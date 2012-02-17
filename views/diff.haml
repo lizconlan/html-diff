@@ -1,0 +1,8 @@
+.code
+  - @contents.lines.each do |line|
+    - if line[0..0] == "-"
+      .del= line
+    - elsif line[0..0] == "+"
+      .ins= line
+    - else
+      %div
