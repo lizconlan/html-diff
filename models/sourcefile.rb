@@ -22,7 +22,7 @@ class Sourcefile
   
   private
     def sanitize_text(text)
-      text.encode!('UTF-16', 'UTF-8', :invalid => :replace, :replace => '')
-      text.encode!('UTF-8', 'UTF-16')
+      text.encode!('UTF-16LE', 'UTF-8', :invalid => :replace, :replace => '')
+      text.encode!('UTF-8', 'UTF-16LE')
     end
 end
